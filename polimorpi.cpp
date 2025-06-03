@@ -23,3 +23,17 @@ class lia : public seseorang {
     }
 };
 
+int main() {
+    seseorang* obyek;
+    joko a;
+    lia b;
+
+    obyek = &a;
+    obyek->pesan(); // Output: Pesan dari joko.
+    obyek = &b;
+    obyek->pesan(); // Output: Pesan dari lia.
+    //a.seseorang::pesan(); // Output: Orang membuat pesan.
+    //b.seseorang::pesan(); // Output: Orang membuat pesan.
+
+    return 0;
+}
