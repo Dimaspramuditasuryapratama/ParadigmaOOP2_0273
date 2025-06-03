@@ -3,6 +3,7 @@ using namespace std;
 
 class seseorang {
 public:
+    //virtual void pesan() = 0;
     virtual void pesan() {
         cout << "Orang membuat pesan." << endl;
     }
@@ -14,3 +15,11 @@ public:
         cout << "Pesan dari joko." << endl;
     }
 };
+
+class lia : public seseorang {
+    public:
+    void pesan() {
+        cout << "Pesan dari lia." << endl;
+    }
+};
+
